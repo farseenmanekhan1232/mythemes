@@ -1,8 +1,18 @@
+# Function to shorten the directory path
+prompt_short_dir() {
+  # Replace $HOME with ~ and abbreviate intermediate directories to single characters
+  local dir_path="${PWD/#$HOME/~}"
+  echo "${dir_path/#\//$HOME/}" | awk -F/ '{
+    if (NF>3) { 
+      printf "%s/…/%s", $2, $NF
+    } else {
+      print $0
+    }
+  }'
+}
 
-
-
-# Path segment: Display the current path with color #c6e3ff and white brackets
-PROMPT=$'%{\e[38;5;153m%}[%{\e[38;5;15m%}%~%{\e[38;5;153m%}] '
+# Path segment: Display the current shortened path with color #c6e3ff and white brackets
+PROMPT=$'%{\e[38;5;153m%}[%{\e[38;5;15m%}$(prompt_short_dir)%{\e[38;5;153m%}] '
 
 # Git branch icon (\ue725) and branch name - properly escaped for ZSH
 ZSH_THEME_GIT_PROMPT_BRANCH_ICON=$'%{\e[38;5;153m%}\ue725%{\e[38;5;15m%}'  # Custom branch icon
