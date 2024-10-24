@@ -1,0 +1,84 @@
+{
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.internalConsoleOptions": "neverOpen",
+  "git.openRepositoryInParentFolders": "never",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "editor.accessibilitySupport": "off",
+  "workbench.editorAssociations": {
+    "*.sqlite3": "default"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "terminal.integrated.profiles.windows": {
+    "right": {
+      "overrideName": "right",
+      "colorScheme": "Ayu Mirage",
+      "splitInGrouping": "never",
+      "splitMode": "off",
+      "position": "right"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "right",
+
+  "workbench.startupEditor": "none",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "explorer.compactFolders": false,
+  "editor.wordWrap": "on",
+  "editor.defaultColorDecorators": true,
+  "workbench.colorTheme": "Ayu Mirage",
+  "codeium.enableConfig": {
+    "*": true,
+    "markdown": true
+  },
+  "git.autofetch": true,
+  "codeium.enableCodeLens": "hide_x",
+  //exludes fies & folders in search indexing
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/env": true,
+    "**/venv": true
+  },
+  //exludes fies & folders for watcher service
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/env/**": true,
+    "**/venv/**": true,
+    "env-*": true
+  },
+  "editor.minimap.renderCharacters": false,
+  "sherlock.userId": "e11eb587-9b8a-4aeb-b905-9caf89fb10eb",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "javascriptreact"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  "workbench.panel.defaultLocation": "right"
+}
